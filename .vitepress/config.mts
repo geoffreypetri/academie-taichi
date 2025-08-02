@@ -5,8 +5,11 @@ export default defineConfig({
   title: "Académie de Taichi",
   description: "Arts Energétiques",
   base: '/academie-taichi/',
+  cleanUrls: true,
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/logo.svg',
     nav: [
       { text: 'Note école', link: '/ecole' },
       { text: 'Taichi', link: '/taichi' },
