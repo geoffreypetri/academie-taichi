@@ -13,6 +13,9 @@ hero:
     - theme: alt
       text: Renseignements
       link: /infos
+  image:
+    light: /logo.svg
+    dark: /logo.svg
 
 features:
   - title: Feature A
