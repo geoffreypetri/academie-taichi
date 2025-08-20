@@ -16,6 +16,7 @@ export default defineConfig({
       { text: 'Qi Gong', link: '/qi-gong' },
       { text: 'Sport Santé', link: '/sport-sante' },
       { text: 'Renseignements', link: '/infos' },
+      { text: 'Contact', link: '/contact' },
     ],
 
     sidebar: [
@@ -36,7 +37,17 @@ export default defineConfig({
 
     footer: {
       message: 'Association loi 1901 soutenue par la Ville de Biot',
-      copyright: 'Copyright © 2019-present ATRE Biot · mentions légales · contact'
+      copyright: 'Copyright © 2019-present ATRE Biot · <a href="/mentions-legales">mentions légales</a> · <a href="/contact">contact</a>'
     }
+  },
+
+  markdown: {
+    image: {
+      lazyLoading: true
+    }
+  },
+
+  sitemap: {
+    hostname: 'https://taichi-biot.fr'
   }
 })
